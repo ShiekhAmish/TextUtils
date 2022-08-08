@@ -29,7 +29,7 @@ function App() {
       setMode ('dark');
       document.body.style.backgroundColor="black";
       showAlert("Dark Mode is Enabled", "success");
-      document.title='Dark mode is Enabled';
+      // document.title='Dark mode is Enabled';
       // setInterval(() => {
       //   document.title='Install TextUtis....';
       // }, 2000);
@@ -41,7 +41,7 @@ function App() {
       setMode ('light');
       document.body.style.backgroundColor="white";
       showAlert("Light Mode is Enabled", "success");
-      document.title='Light Mode is Enabled';
+      // document.title='Light Mode is Enabled';
 
     }
   }
@@ -51,7 +51,7 @@ function App() {
     <Alert alert={alert}/>
 
     
-   <TextForm showAlert={showAlert} heading="Enter Text Here:" mode={mode}/>
+   <TextForm showAlert={showAlert} heading="Try TextUtils - Word Counter,Charecter Counter,Remove Extra Spaces" mode={mode}/>
     </>
   );
 }
