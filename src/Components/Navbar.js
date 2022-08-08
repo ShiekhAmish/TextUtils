@@ -20,6 +20,23 @@ export default function Navbar(props) {
           </li> */}
         
       </ul>
+      <div className="d-flex align-items-center mb-1">
+      <div className="d-flex">
+        <div className="bg-primary rounded mx-2" onClick={()=>{props.changebg('primary')}} style={{height:'30px', width:'30px', cursor:'pointer'}}></div>
+      </div>
+      <div className="d-flex">
+        <div className="bg-secondary rounded mx-2" onClick={()=>{props.changebg('secondary')}} style={{height:'30px', width:'30px', cursor:'pointer'}}></div>
+      </div>
+      <div className="d-flex">
+        <div className="bg-warning rounded mx-2" onClick={()=>{props.changebg('warning')}} style={{height:'30px', width:'30px', cursor:'pointer'}}></div>
+      </div>
+      <div className="d-flex">
+        <div className="bg-success rounded mx-2" onClick={()=>{props.changebg('success')}} style={{height:'30px', width:'30px', cursor:'pointer'}}></div>
+      </div>
+      <div className="d-flex">
+        <div className="bg-danger rounded mx-2" onClick={()=>{props.changebg('danger')}} style={{height:'30px', width:'30px', cursor:'pointer'}}></div>
+      </div>
+      </div>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>

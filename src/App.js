@@ -23,7 +23,21 @@ function App() {
       setalert(null)
     }, 1500);
   }
+  const removebg=()=>{
+    document.body.classList.remove('bg-light')
+    document.body.classList.remove('bg-dark')
+    document.body.classList.remove('bg-warning')
+    document.body.classList.remove('bg-success')
+    document.body.classList.remove('bg-secondary')
+    document.body.classList.remove('bg-danger')
+    document.body.classList.remove('bg-primary')
+  }
+  const changebg =(cls)=>{
+    removebg();
+document.body.classList.add('bg-'+cls);
+  }
   const toggleMode =()=>{
+    removebg();
     if (mode === 'light')
     {
       setMode ('dark');
@@ -47,7 +61,7 @@ function App() {
   }
   return (
     <>
-    <Navbar mode={mode} toggleMode={toggleMode}/>
+    <Navbar mode={mode} toggleMode={toggleMode} changebg={changebg}/>
     <Alert alert={alert}/>
 
     
